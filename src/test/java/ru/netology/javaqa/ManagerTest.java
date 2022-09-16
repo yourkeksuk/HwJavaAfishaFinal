@@ -14,7 +14,7 @@ public class ManagerTest {
         String film4 = "film4";
         String film5 = "film5";
 
-        Manager manager = new Manager();
+        Manager manager = new Manager(5);
 
         manager.add(film1);
         manager.add(film2);
@@ -36,7 +36,7 @@ public class ManagerTest {
         String film4 = "film4";
         String film5 = "film5";
 
-        Manager manager = new Manager();
+        Manager manager = new Manager(5);
 
         manager.add(film1);
         manager.add(film2);

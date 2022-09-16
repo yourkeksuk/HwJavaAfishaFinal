@@ -3,10 +3,10 @@ package ru.netology.javaqa;
 public class Manager {
 
     public String[] films = new String[0];
-    public int limit;
+    public int limit = 10;
 
-    public Manager() {
-        limit = 10;
+    public Manager(int limit) {
+        this.limit = limit;
     }
 
     public void add(String film) {
