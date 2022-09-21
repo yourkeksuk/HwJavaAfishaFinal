@@ -10,7 +10,6 @@ public class Manager {
     }
 
     public void add(String film) {
-
         String[] tmp = new String[films.length + 1];
         for (int i = 0; i < films.length; i++) {
             tmp[i] = films[i];
@@ -25,16 +24,16 @@ public class Manager {
 
     public String[] findLast() {
         int resultSize;
-        if(limit < films.length) {
+        if (limit < films.length) {
             resultSize = limit;
-        }else {
+        } else {
             resultSize = films.length;
         }
 
         String[] result = new String[resultSize];
-        for (int i = 0; i < resultSize; i++)
+        for (int i = 0; i < resultSize; i++) {
             result[i] = films[films.length - 1 - i];
+        }
         return result;
     }
-
 }
